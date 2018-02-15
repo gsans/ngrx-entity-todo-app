@@ -1,0 +1,139 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0px;
+  background-color: #3F51B5;
+}
+
+/* fix very long todo description */
+.mat-list .mat-list-item .mat-list-item-content, .mat-nav-list .mat-list-item .mat-list-item-content, .mat-selection-list .mat-list-item .mat-list-item-content {
+  height: 100% !important; 
+  min-height: 46px;
+}
+.mat-tab-label, .mat-tab-link {
+  font-size: 20px;
+}
+
+.active {
+  text-decoration: default;
+}
+.inactive {
+  text-decoration: none; 
+} 
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 8em;
+  font-size: 20px;
+}
+.field {
+  width: 100%;
+  margin: 0px 20px 0px 20px;
+}
+.todo-input {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container1 {
+  cursor: pointer;
+}
+.container1:hover {
+  background-color: #e8eaf6;
+}
+.checkbox{ 
+  margin: 0 20px 0 0;
+}
+.todo-text {
+  font-size: 20px;
+}
+
+
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+  cursor: pointer;
+}
+.subtitle {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.card {
+  padding: 20px;
+  margin: 20px auto 20px;
+  width: 50%;
+  transition: opacity 200ms;
+  opacity: 1;
+}
+.card.flipped  {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.empty {
+  height: 230px;
+}
+.message {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.image {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box {
+  margin: 0px 20px 0px 20px;
+}
+.content-empty {
+  height: 338px;
+}
+.profile {
+  border-radius: 6px;
+  vertical-align: sub;
+}
+
+.mat-card-footer {
+  display: block;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #e8eaf6;
+  margin: 0px;
+}
+
+.footer1[md]{
+  margin: -8px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 0px;
+    margin: 0px auto 0px;
+    width: 100%;
+  }     
+  .mat-card {
+    padding: 0px;
+  }
+}
+
+.delete {
+display: inline;
+    /* padding-top: 5px; */
+    /* margin: 10px 2px 4px 2px; */
+    top: 6px;
+    position: relative;
+}
